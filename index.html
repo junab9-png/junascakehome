@@ -19,49 +19,44 @@
         }
 
         /* HERO SECTION */
-        .hero {
-            position: relative;
-            min-height: 260px;
-            max-height: 360px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .hero-logo {
+            margin-bottom: 12px;
             text-align: center;
-            padding: 20px;
-            overflow: hidden;
         }
-        .hero-bg {
-            position: absolute;
-            inset: 0;
-            background:
-                linear-gradient(to bottom, rgba(20, 10, 40, 0.7), rgba(20, 10, 40, 0.85)),
-                url('hero-cakes.jpg') center/cover no-repeat;
-            filter: blur(1px);
-            transform: scale(1.03);
-        }
-        .hero-content {
-            position: relative;
-            max-width: 720px;
-            padding: 10px 20px;
+        .hero-logo img {
+            border-radius: 12px;
+            border: 2px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .hero h1 {
-            font-size: 2.4em;
+            font-size: 2.2em;
             margin: 0 0 8px 0;
             letter-spacing: 0.04em;
-        }
-        .hero p {
-            margin: 3px 0;
-            font-size: 1.02em;
+            color: white;
         }
         .hero-tag {
             display: inline-block;
-            margin-top: 10px;
+            margin-bottom: 14px;
             padding: 6px 14px;
             border-radius: 999px;
             background: rgba(255, 255, 255, 0.15);
-            font-size: 0.85em;
+            font-size: 0.9em;
         }
+        .hero-message {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #f0f0f0;
+        }
+        .hero-message p {
+            margin-bottom: 12px;
+        }
+        .hero-message strong {
+            color: #fff;
+            font-weight: 600;
+        }
+        
 
         /* MAIN WRAPPER */
         .main-container {
@@ -285,15 +280,23 @@
 <body>
 
     <!-- HERO SECTION -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <h1>Juna's Cake Home</h1>
-            <p>Custom Birthday, Anniversary & Theme Cakes</p>
-            <p>Home-baked with love in Sarjapur Road, Bangalore</p>
-            <div class="hero-tag">Delivering from Yamare, Sarjapur Road within 5 KM radius • Pre-order only</div>
+            <div class="hero-logo">
+                <img src="logo.png" alt="Juna's Cake Home Logo" width="80">
+            </div>
+            <h1>Why Choose Juna's Cake Home?</h1>
+            <p class="hero-tag">Handcrafted with love in Sarjapur Road, Bangalore</p>
+            <div class="hero-message">
+                <p>Every cake is made with <strong>extreme care and attention to hygiene</strong>. We personally oversee each step, ensuring the highest standards of safety and cleanliness.</p>
+                <p>All cakes are <strong>freshly made after receiving your order</strong>, using only the finest ingredients. We believe that safety and hygiene are the most important factors in a bakery business.</p>
+                <p>You get the <strong>best value for every penny you spend</strong>. While premium products may cost a bit more, the quality and taste are truly worth it!</p>
+            </div>
         </div>
     </section>
+
 
     <!-- MAIN CONTENT -->
     <div class="main-container">
