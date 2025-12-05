@@ -17,8 +17,6 @@
             background: #faf6ff;
             color: #333;
         }
-        
-        /* HERO SECTION – RESET */
         .hero {
             position: relative;
             min-height: 260px;
@@ -29,9 +27,8 @@
             text-align: center;
             padding: 20px;
             overflow: hidden;
-            color: #ffffff; /* force white text */
+            color: #ffffff;
         }
-        
         .hero-bg {
             position: absolute;
             inset: 0;
@@ -42,14 +39,12 @@
             transform: scale(1.03);
             z-index: 0;
         }
-        
         .hero-content {
             position: relative;
             max-width: 780px;
             padding: 10px 20px;
-            z-index: 1; /* make sure text is above background */
+            z-index: 1;
         }
-        
         .hero-logo {
             margin-bottom: 12px;
             text-align: center;
@@ -59,14 +54,12 @@
             border: 2px solid #fff;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
-        
         .hero h1 {
             font-size: 2.2em;
             margin: 0 0 8px 0;
             letter-spacing: 0.04em;
-            color: #ffffff; /* force white heading */
+            color: #ffffff;
         }
-        
         .hero-tag {
             display: inline-block;
             margin-bottom: 14px;
@@ -76,13 +69,12 @@
             font-size: 0.9em;
             color: #f9f9f9;
         }
-        
         .hero-message {
             max-width: 620px;
             margin: 0 auto;
             font-size: 0.95em;
             line-height: 1.6;
-            color: #f0f0f0; /* light text */
+            color: #f0f0f0;
         }
         .hero-message p {
             margin-bottom: 10px;
@@ -91,7 +83,6 @@
             color: #ffffff;
             font-weight: 600;
         }
-        
         @media (max-width: 600px) {
             .hero {
                 min-height: 230px;
@@ -102,8 +93,6 @@
                 font-size: 1.9em;
             }
         }
-
-        /* MAIN WRAPPER */
         .main-container {
             max-width: 1120px;
             margin: -30px auto 30px auto;
@@ -112,629 +101,5 @@
             padding: 22px 18px 30px 18px;
             box-shadow: 0 12px 40px rgba(0,0,0,0.18);
         }
-
         h2.section-title {
-            text-align: center;
-            color: #5b3199;
-            margin: 22px 0 6px 0;
-            font-size: 1.6em;
-        }
-        .section-subtitle {
-            text-align: center;
-            color: #777;
-            font-size: 0.95em;
-            margin-bottom: 18px;
-        }
-
-        .category-grid,
-        .theme-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 18px;
-            margin: 14px 0 24px 0;
-        }
-
-        .card {
-            border-radius: 18px;
-            overflow: hidden;
-            border: 1px solid #eee;
-            background: #fdfbff;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            transition: transform 0.18s ease, box-shadow 0.18s ease;
-        }
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-        }
-
-        .card-img-wrap {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 4 / 3; /* fixes weird crop: more cake visible */
-            overflow: hidden;
-            background: #ddd;
-        }
-        .card-img-wrap img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            cursor: pointer;
-        }
-
-        .card-body {
-            padding: 12px 14px 16px 14px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .card-title {
-            font-size: 1.15em;
-            font-weight: 600;
-            color: #4a2b7a;
-            margin-bottom: 4px;
-        }
-        .card-price {
-            color: #8a3bc5;
-            font-weight: 600;
-            margin-bottom: 6px;
-            font-size: 0.95em;
-        }
-        .card-list {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 10px 0;
-            color: #555;
-            font-size: 0.9em;
-        }
-        .card-list li {
-            margin-bottom: 3px;
-        }
-
-        /* Multiple thumbnails inside theme cards */
-        .thumb-row {
-            display: flex;
-            gap: 6px;
-            flex-wrap: nowrap;
-            margin-bottom: 8px;
-        }
-        .thumb-row img {
-            width: 23%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            cursor: pointer;
-        }
-
-        .order-btn {
-            background: #25D366;
-            color: white;
-            padding: 9px 18px;
-            border-radius: 999px;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-            font-size: 0.9em;
-            font-weight: 600;
-            margin-top: auto;
-            align-self: flex-start;
-            transition: background 0.2s;
-        }
-        .order-btn:hover {
-            background: #128C7E;
-        }
-
-        /* FLAVOURS SECTION */
-        .flavours-box {
-            margin: 10px auto 22px auto;
-            max-width: 900px;
-            background: #f6f0ff;
-            border-radius: 18px;
-            padding: 16px 18px;
-            border: 1px dashed #c0a6ff;
-        }
-        .flavours-title {
-            font-weight: 600;
-            color: #4a2b7a;
-            margin-bottom: 6px;
-            text-align: center;
-        }
-        .flavours-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px 14px;
-            justify-content: center;
-            font-size: 0.9em;
-            color: #444;
-        }
-        .flavour-pill {
-            padding: 4px 10px;
-            border-radius: 999px;
-            background: white;
-            border: 1px solid #e0d2ff;
-        }
-        .egg-note {
-            text-align: center;
-            margin-top: 8px;
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        /* ADDRESS SECTION */
-        .footer {
-            max-width: 1120px;
-            margin: 0 auto 24px auto;
-            text-align: center;
-            font-size: 0.9em;
-            color: #555;
-        }
-        .footer h3 {
-            margin-bottom: 6px;
-            color: #4a2b7a;
-        }
-        .footer p {
-            margin: 3px 0;
-        }
-
-        /* LIGHTBOX MODAL FOR FULL IMAGE VIEW */
-        .lightbox {
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.8);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            padding: 20px;
-        }
-        .lightbox img {
-            max-width: 95vw;
-            max-height: 90vh;
-            border-radius: 12px;
-            box-shadow: 0 0 30px rgba(0,0,0,0.6);
-        }
-        .lightbox-close {
-            position: fixed;
-            top: 16px;
-            right: 20px;
-            font-size: 1.8em;
-            color: #fff;
-            cursor: pointer;
-            font-weight: 600;
-        }
-
-        @media (max-width: 600px) {
-            .hero {
-                min-height: 220px;
-            }
-            .hero h1 {
-                font-size: 2em;
-            }
-            .main-container {
-                margin-top: -20px;
-                border-radius: 18px;
-                padding: 18px 12px 24px 12px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-        <div class="hero-logo">
-            <img src="logo.png" alt="Juna's Cake Home Logo" width="80">
-        </div>
-        <h1>Why Choose Juna's Cake Home?</h1>
-        <p class="hero-tag">Handcrafted custom cakes in Sarjapur Road, Bangalore</p>
-        <div class="hero-message">
-            <p>Every cake is made with <strong>extreme care and attention to hygiene</strong>. Each order is personally handled so that every detail is neat, clean and beautiful.</p>
-            <p>All cakes are <strong>freshly baked after we receive your order</strong>, using high-quality ingredients only. We understand that <strong>safety and hygiene</strong> are the most important parts of a bakery business.</p>
-            <p>You get the <strong>best value for every rupee you spend</strong>. Premium cakes may cost a bit more, but the taste, finish and experience make it truly worth it.</p>
-        </div>
-    </div>
-</section>
-
-        
-
-
-    <!-- MAIN CONTENT -->
-    <div class="main-container">
-
-        <!-- FLAVOURS + EGG / EGGLESS -->
-        <div class="flavours-box">
-            <div class="flavours-title">Flavours Available</div>
-            <div class="flavours-list">
-                <span class="flavour-pill">Vanilla</span>
-                <span class="flavour-pill">Butterscotch</span>
-                <span class="flavour-pill">Tender Coconut</span>
-                <span class="flavour-pill">Chocolate Truffle</span>
-                <span class="flavour-pill">Chocolate Ganache</span>
-                <span class="flavour-pill">Pineapple</span>
-                <span class="flavour-pill">Mixed Fruit</span>
-                <span class="flavour-pill">Dates &amp; Carrot</span>
-                <span class="flavour-pill">Lotus Biscoff</span>
-                <span class="flavour-pill">Ferrero Rocher</span>
-                <span class="flavour-pill">Spanish Delight</span>
-                <span class="flavour-pill">Vancho</span>
-                <span class="flavour-pill">Black forest</span>
-                <span class="flavour-pill">White forest</span>
-                <span class="flavour-pill">Strawberry</span>
-                <span class="flavour-pill">Oreo</span>
-                <span class="flavour-pill">Blueberry</span>
-                <span class="flavour-pill">Red velvet</span>
-                <span class="flavour-pill">Rasmalai</span>
-                <span class="flavour-pill">Pistachio</span>
-                <span class="flavour-pill">Milk cake</span>
-            </div>
-            <div class="egg-note">
-                Both <strong>with egg</strong> and <strong>eggless</strong> options are available for most flavours.  
-                Please mention your preference while ordering.
-            </div>
-        </div>
-
-        <!-- BIRTHDAY SECTION -->
-        <h2 class="section-title">Birthday Cakes</h2>
-        <p class="section-subtitle">Customised birthday cakes for kids and adults – photo cakes, number cakes and more.</p>
-        
-        <div class="category-grid">
-            <div class="card">
-                <div class="card-img-wrap">
-                    <img src="birthday-cakes-1.jpg" alt="Birthday Cake 1" onclick="openLightbox(this.src)">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Birthday Cakes</div>
-                    <div class="card-price">₹1200 – ₹1600 / kg (varies by design & flavour)</div>
-        
-                    <div class="thumb-row">
-                        <img src="birthday-cakes-1.jpg" alt="Birthday Cake 1" onclick="openLightbox(this.src)">
-                        <img src="birthday-cakes-2.jpg" alt="Birthday Cake 2" onclick="openLightbox(this.src)">
-                        <img src="birthday-cakes-3.jpg" alt="Birthday Cake 3" onclick="openLightbox(this.src)">
-                        <img src="birthday-cakes-4.jpg" alt="Birthday Cake 4" onclick="openLightbox(this.src)">
-                        <img src="birthday-cakes-5.jpg" alt="Birthday Cake 5" onclick="openLightbox(this.src)">
-                        <img src="birthday-cakes-6.jpg" alt="Birthday Cake 6" onclick="openLightbox(this.src)">
-                        <img src="birthday-cakes-7.jpg" alt="Birthday Cake 7" onclick="openLightbox(this.src)">
-                    </div>
-        
-                    <ul class="card-list">
-                        <li>• Kids’ birthday cakes</li>
-                        <li>• Adults’ birthday cakes</li>
-                        <li>• Photo cakes</li>
-                        <li>• Number cakes (1, 18, 50, etc.)</li>
-                        <li>• Designer / premium birthday cakes</li>
-                    </ul>
-                    <a class="order-btn"
-                       href="https://wa.me/919535071630?text=Hi! I want to order a Birthday Cake. Please share designs and price range.">
-                        Order
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- ANNIVERSARY SECTION -->
-        <h2 class="section-title">Anniversary Cakes</h2>
-        <p class="section-subtitle">Elegant cakes for 1st, 25th, 50th anniversaries and all special milestones.</p>
-        
-        <div class="category-grid">
-            <div class="card">
-                <div class="card-img-wrap">
-                    <img src="anniversary-cakes-1.jpg" alt="Anniversary Cake 1" onclick="openLightbox(this.src)">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Anniversary Cakes</div>
-                    <div class="card-price">₹1300 – ₹1800 / kg (varies by design & flavour)</div>
-        
-                    <div class="thumb-row">
-                        <img src="anniversary-cakes-1.jpg" alt="Anniversary Cake 1" onclick="openLightbox(this.src)">
-                        <img src="anniversary-cakes-2.jpg" alt="Anniversary Cake 2" onclick="openLightbox(this.src)">
-                        <img src="anniversary-cakes-3.jpg" alt="Anniversary Cake 3" onclick="openLightbox(this.src)">
-                        <img src="anniversary-cakes-4.jpg" alt="Anniversary Cake 4" onclick="openLightbox(this.src)">
-                        <img src="anniversary-cakes-5.jpg" alt="Anniversary Cake 5" onclick="openLightbox(this.src)">
-                        <img src="anniversary-cakes-6.jpg" alt="Anniversary Cake 6" onclick="openLightbox(this.src)">
-                        <img src="anniversary-cakes-7.jpg" alt="Anniversary Cake 7" onclick="openLightbox(this.src)">
-                    </div>
-        
-                    <ul class="card-list">
-                        <li>• 1st anniversary cakes</li>
-                        <li>• 25th / silver jubilee cakes</li>
-                        <li>• 50th / golden jubilee cakes</li>
-                        <li>• Couple theme cakes</li>
-                        <li>• Heart-shaped designs</li>
-                    </ul>
-                    <a class="order-btn"
-                       href="https://wa.me/919535071630?text=Hi! I want to order an Anniversary Cake. Please share designs and price range.">
-                        Order
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- THEME CAKES SECTION -->
-        <h2 class="section-title">Theme Cakes</h2>
-        <p class="section-subtitle">Each theme is available in multiple designs. Price depends on size, flavour and design complexity.</p>
-
-        <div class="theme-grid">
-
-            <!-- Elsa Theme -->
-            <div class="card">
-                <div class="card-img-wrap">
-                    <img src="theme-elsa-1.jpg" alt="Elsa Theme Cake" onclick="openLightbox(this.src)">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Elsa Theme Cake</div>
-                    <div class="card-price">₹1300 – ₹1900 / kg</div>
-
-                    <div class="thumb-row">
-                        <img src="theme-elsa-1.jpg" alt="Elsa Cake 1" onclick="openLightbox(this.src)">
-                        <img src="theme-elsa-2.jpg" alt="Elsa Cake 2" onclick="openLightbox(this.src)">
-                        <img src="theme-elsa-3.jpg" alt="Elsa Cake 3" onclick="openLightbox(this.src)">
-                        <img src="theme-elsa-4.jpg" alt="Elsa Cake 4" onclick="openLightbox(this.src)">
-                    </div>
-
-                    <ul class="card-list">
-                        <li>• Multiple Elsa designs</li>
-                        <li>• Custom colours and toppers</li>
-                    </ul>
-                    <a class="order-btn"
-                       href="https://wa.me/919535071630?text=Hi! I want to see Elsa theme cake designs and price range.">
-                        Order
-                    </a>
-                </div>
-            </div>
-
-            <!-- Peppa Pig Theme -->
-            <div class="card">
-                <div class="card-img-wrap">
-                    <img src="theme-peppa-1.jpg" alt="Peppa Pig Cake" onclick="openLightbox(this.src)">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Peppa Pig Cake</div>
-                    <div class="card-price">₹1300 – ₹1800 / kg</div>
-
-                    <div class="thumb-row">
-                        <img src="theme-peppa-1.jpg" alt="Peppa Cake 1" onclick="openLightbox(this.src)">
-                        <img src="theme-peppa-2.jpg" alt="Peppa Cake 2" onclick="openLightbox(this.src)">
-                        <img src="theme-peppa-3.jpg" alt="Peppa Cake 3" onclick="openLightbox(this.src)">
-                        <img src="theme-peppa-4.jpg" alt="Peppa Cake 4" onclick="openLightbox(this.src)">
-                    </div>
-
-                    <ul class="card-list">
-                        <li>• Cute Peppa Pig designs</li>
-                        <li>• Custom name & age toppers</li>
-                    </ul>
-                    <a class="order-btn"
-                       href="https://wa.me/919535071630?text=Hi! I want to see Peppa Pig cake designs and price range.">
-                        Order
-                    </a>
-                </div>
-            </div>
-
-            <!-- Paw Patrol Theme -->
-            <div class="card">
-                <div class="card-img-wrap">
-                    <img src="theme-paw-1.jpg" alt="Paw Patrol Cake" onclick="openLightbox(this.src)">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Paw Patrol Cake</div>
-                    <div class="card-price">₹1300 – ₹1900 / kg</div>
-
-                    <div class="thumb-row">
-                        <img src="theme-paw-1.jpg" alt="Paw Patrol 1" onclick="openLightbox(this.src)">
-                        <img src="theme-paw-2.jpg" alt="Paw Patrol 2" onclick="openLightbox(this.src)">
-                        <img src="theme-paw-3.jpg" alt="Paw Patrol 3" onclick="openLightbox(this.src)">
-                        <img src="theme-paw-4.jpg" alt="Paw Patrol 4" onclick="openLightbox(this.src)">
-                    </div>
-
-                    <ul class="card-list">
-                        <li>• Multiple pup character options</li>
-                        <li>• Customised for kids’ age</li>
-                    </ul>
-                    <a class="order-btn"
-                       href="https://wa.me/919535071630?text=Hi! I want Paw Patrol cake options and price range.">
-                        Order
-                    </a>
-                </div>
-            </div>
-
-            <!-- Unicorn Theme -->
-            <div class="card">
-                <div class="card-img-wrap">
-                    <img src="theme-unicorn-1.jpg" alt="Unicorn Cake" onclick="openLightbox(this.src)">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Unicorn Theme Cake</div>
-                    <div class="card-price">₹1400 – ₹2000 / kg</div>
-
-                    <div class="thumb-row">
-                        <img src="theme-unicorn-1.jpg" alt="Unicorn 1" onclick="openLightbox(this.src)">
-                        <img src="theme-unicorn-2.jpg" alt="Unicorn 2" onclick="openLightbox(this.src)">
-                        <img src="theme-unicorn-3.jpg" alt="Unicorn 3" onclick="openLightbox(this.src)">
-                        <img src="theme-unicorn-4.jpg" alt="Unicorn 4" onclick="openLightbox(this.src)">
-                    </div>
-
-                    <ul class="card-list">
-                        <li>• Multiple unicorn designs</li>
-                        <li>• Pastel / rainbow options</li>
-                    </ul>
-                    <a class="order-btn"
-                       href="https://wa.me/919535071630?text=Hi! I want to see Unicorn theme cake designs and price range.">
-                        Order
-                    </a>
-                </div>
-            </div>
-
-            <!-- Jungle Theme -->
-            <div class="card">
-                <div class="card-img-wrap">
-                    <img src="theme-jungle-1.jpg" alt="Jungle Theme Cake" onclick="openLightbox(this.src)">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Jungle Theme Cake</div>
-                    <div class="card-price">₹1300 – ₹1900 / kg</div>
-
-                    <div class="thumb-row">
-                        <img src="theme-jungle-1.jpg" alt="Jungle 1" onclick="openLightbox(this.src)">
-                        <img src="theme-jungle-2.jpg" alt="Jungle 2" onclick="openLightbox(this.src)">
-                        <img src="theme-jungle-3.jpg" alt="Jungle 3" onclick="openLightbox(this.src)">
-                        <img src="theme-jungle-4.jpg" alt="Jungle 4" onclick="openLightbox(this.src)">
-                    </div>
-
-                    <ul class="card-list">
-                        <li>• Animal & jungle scene designs</li>
-                        <li>• Perfect for kids’ birthdays</li>
-                    </ul>
-                    <a class="order-btn"
-                       href="https://wa.me/919535071630?text=Hi! I want Jungle theme cake options and price range.">
-                        Order
-                    </a>
-                </div>
-            </div>
-
-            <!-- Spiderman Theme -->
-            <div class="card">
-                <div class="card-img-wrap">
-                    <img src="theme-spiderman-1.jpg" alt="Spiderman Cake" onclick="openLightbox(this.src)">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Spiderman Theme Cake</div>
-                    <div class="card-price">₹1300 – ₹1900 / kg</div>
-
-                    <div class="thumb-row">
-                        <img src="theme-spiderman-1.jpg" alt="Spiderman 1" onclick="openLightbox(this.src)">
-                        <img src="theme-spiderman-2.jpg" alt="Spiderman 2" onclick="openLightbox(this.src)">
-                        <img src="theme-spiderman-3.jpg" alt="Spiderman 3" onclick="openLightbox(this.src)">
-                        <img src="theme-spiderman-4.jpg" alt="Spiderman 4" onclick="openLightbox(this.src)">
-                    </div>
-
-                    <ul class="card-list">
-                        <li>• Superhero themed designs</li>
-                        <li>• City / web background styles</li>
-                    </ul>
-                    <a class="order-btn"
-                       href="https://wa.me/919535071630?text=Hi! I want Spiderman cake designs and price range.">
-                        Order
-                    </a>
-                </div>
-            </div>
-
-            <!-- Football Theme -->
-            <div class="card">
-                <div class="card-img-wrap">
-                    <img src="theme-football-1.jpg" alt="Football Cake" onclick="openLightbox(this.src)">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Football Theme Cake</div>
-                    <div class="card-price">₹1300 – ₹1900 / kg</div>
-
-                    <div class="thumb-row">
-                        <img src="theme-football-1.jpg" alt="Football 1" onclick="openLightbox(this.src)">
-                        <img src="theme-football-2.jpg" alt="Football 2" onclick="openLightbox(this.src)">
-                        <img src="theme-football-3.jpg" alt="Football 3" onclick="openLightbox(this.src)">
-                        <img src="theme-football-4.jpg" alt="Football 4" onclick="openLightbox(this.src)">
-                    </div>
-
-                    <ul class="card-list">
-                        <li>• Football & jersey designs</li>
-                        <li>• Custom team colours</li>
-                    </ul>
-                    <a class="order-btn"
-                       href="https://wa.me/919535071630?text=Hi! I want Football theme cake options and price range.">
-                        Order
-                    </a>
-                </div>
-            </div>
-
-            <!-- Mermaid Theme -->
-            <div class="card">
-                <div class="card-img-wrap">
-                    <img src="theme-mermaid-1.jpg" alt="Mermaid Cake" onclick="openLightbox(this.src)">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Mermaid Theme Cake</div>
-                    <div class="card-price">₹1400 – ₹2000 / kg</div>
-
-                    <div class="thumb-row">
-                        <img src="theme-mermaid-1.jpg" alt="Mermaid 1" onclick="openLightbox(this.src)">
-                        <img src="theme-mermaid-2.jpg" alt="Mermaid 2" onclick="openLightbox(this.src)">
-                        <img src="theme-mermaid-3.jpg" alt="Mermaid 3" onclick="openLightbox(this.src)">
-                        <img src="theme-mermaid-4.jpg" alt="Mermaid 4" onclick="openLightbox(this.src)">
-                    </div>
-
-                    <ul class="card-list">
-                        <li>• Underwater & shell designs</li>
-                        <li>• Pastel & ocean colours</li>
-                    </ul>
-                    <a class="order-btn"
-                       href="https://wa.me/919535071630?text=Hi! I want Mermaid cake designs and price range.">
-                        Order
-                    </a>
-                </div>
-            </div>
-
-            <!-- Baby Shower Theme -->
-            <div class="card">
-                <div class="card-img-wrap">
-                    <img src="theme-babyshower-1.jpg" alt="Baby Shower Cake" onclick="openLightbox(this.src)">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Baby Shower Theme Cake</div>
-                    <div class="card-price">₹1300 – ₹1900 / kg</div>
-
-                    <div class="thumb-row">
-                        <img src="theme-babyshower-1.jpg" alt="Baby Shower 1" onclick="openLightbox(this.src)">
-                        <img src="theme-babyshower-2.jpg" alt="Baby Shower 2" onclick="openLightbox(this.src)">
-                        <img src="theme-babyshower-3.jpg" alt="Baby Shower 3" onclick="openLightbox(this.src)">
-                        <img src="theme-babyshower-4.jpg" alt="Baby Shower 4" onclick="openLightbox(this.src)">
-                    </div>
-
-                    <ul class="card-list">
-                        <li>• Oh Baby, gender reveal & more</li>
-                        <li>• Custom colours and toppers</li>
-                    </ul>
-                    <a class="order-btn"
-                       href="https://wa.me/919535071630?text=Hi! I want Baby Shower theme cake options and price range.">
-                        Order
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- ADDRESS / FOOTER -->
-    <div class="footer">
-        <h3>Visit / Delivery From</h3>
-        <p>Juna's Cake Home</p>
-        <p>Villa No: L-15, Kristal Campus 10</p>
-        <p>Yamare Village, Sarjapur Road</p>
-        <p>Bangalore - 562125</p>
-        <p>WhatsApp: +91 95350 71630</p>
-    </div>
-
-    <!-- LIGHTBOX OVERLAY -->
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <span class="lightbox-close" onclick="closeLightbox()">×</span>
-        <img id="lightbox-img" src="" alt="Cake">
-    </div>
-
-    <script>
-        function openLightbox(src) {
-            var lb = document.getElementById('lightbox');
-            var img = document.getElementById('lightbox-img');
-            img.src = src;
-            lb.style.display = 'flex';
-        }
-        function closeLightbox() {
-            var lb = document.getElementById('lightbox');
-            lb.style.display = 'none';
-        }
-    </script>
-</body>
-</html>
+            text
