@@ -17,8 +17,39 @@
             background: #faf6ff;
             color: #333;
         }
-
-        /* HERO SECTION */
+        
+        /* HERO SECTION – RESET */
+        .hero {
+            position: relative;
+            min-height: 260px;
+            max-height: 360px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+            color: #ffffff; /* force white text */
+        }
+        
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(to bottom, rgba(20, 10, 40, 0.7), rgba(20, 10, 40, 0.85)),
+                url('hero-cakes.jpg') center/cover no-repeat;
+            filter: blur(1px);
+            transform: scale(1.03);
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            max-width: 780px;
+            padding: 10px 20px;
+            z-index: 1; /* make sure text is above background */
+        }
+        
         .hero-logo {
             margin-bottom: 12px;
             text-align: center;
@@ -26,37 +57,51 @@
         .hero-logo img {
             border-radius: 12px;
             border: 2px solid #fff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
+        
         .hero h1 {
             font-size: 2.2em;
             margin: 0 0 8px 0;
             letter-spacing: 0.04em;
-            color: white;
+            color: #ffffff; /* force white heading */
         }
+        
         .hero-tag {
             display: inline-block;
             margin-bottom: 14px;
             padding: 6px 14px;
             border-radius: 999px;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.18);
             font-size: 0.9em;
+            color: #f9f9f9;
         }
+        
         .hero-message {
-            max-width: 600px;
+            max-width: 620px;
             margin: 0 auto;
             font-size: 0.95em;
             line-height: 1.6;
-            color: #f0f0f0;
+            color: #f0f0f0; /* light text */
         }
         .hero-message p {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
         .hero-message strong {
-            color: #fff;
+            color: #ffffff;
             font-weight: 600;
         }
         
+        @media (max-width: 600px) {
+            .hero {
+                min-height: 230px;
+                max-height: none;
+                padding: 18px 12px;
+            }
+            .hero h1 {
+                font-size: 1.9em;
+            }
+        }
 
         /* MAIN WRAPPER */
         .main-container {
