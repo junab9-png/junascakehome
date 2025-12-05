@@ -17,18 +17,19 @@
             background: #faf6ff;
             color: #333;
         }
+        /* HERO SECTION */
         .hero {
             position: relative;
             min-height: 260px;
             max-height: 360px;
+            padding: 24px 20px;
+            overflow: hidden;
+            color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding: 20px;
-            overflow: hidden;
-            color: #ffffff;
         }
+        
         .hero-bg {
             position: absolute;
             inset: 0;
@@ -39,27 +40,66 @@
             transform: scale(1.03);
             z-index: 0;
         }
-        .hero-content {
+        
+        .hero-inner {
             position: relative;
-            max-width: 780px;
-            padding: 10px 20px;
             z-index: 1;
+            max-width: 980px;
+            width: 100%;
+            display: flex;
+            gap: 26px;
+            align-items: center;
+            justify-content: center;
         }
-        .hero-logo {
-            margin-bottom: 12px;
+        
+        .hero-left {
+            flex: 0 0 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .hero-logo-circle {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(255,255,255,0.7);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+            overflow: hidden;
+        }
+        
+        .hero-logo-circle img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+        }
+        
+        .hero-brand-name {
+            font-size: 1.05em;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
             text-align: center;
+            color: #fdfdfd;
         }
-        .hero-logo img {
-            border-radius: 12px;
-            border: 2px solid #fff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        
+        .hero-right {
+            flex: 1;
+            max-width: 720px;
         }
-        .hero h1 {
-            font-size: 2.2em;
+        
+        .hero-right h1 {
+            font-size: 2.1em;
             margin: 0 0 8px 0;
             letter-spacing: 0.04em;
             color: #ffffff;
         }
+        
         .hero-tag {
             display: inline-block;
             margin-bottom: 14px;
@@ -69,30 +109,43 @@
             font-size: 0.9em;
             color: #f9f9f9;
         }
+        
         .hero-message {
-            max-width: 620px;
-            margin: 0 auto;
             font-size: 0.95em;
             line-height: 1.6;
             color: #f0f0f0;
         }
+        
         .hero-message p {
             margin-bottom: 10px;
         }
+        
         .hero-message strong {
             color: #ffffff;
             font-weight: 600;
         }
-        @media (max-width: 600px) {
+        
+        @media (max-width: 700px) {
             .hero {
-                min-height: 230px;
                 max-height: none;
                 padding: 18px 12px;
             }
-            .hero h1 {
-                font-size: 1.9em;
+            .hero-inner {
+                flex-direction: column;
+                gap: 18px;
             }
-        }
+            .hero-left {
+                flex: 0 0 auto;
+            }
+            .hero-right h1 {
+                font-size: 1.8em;
+                text-align: center;
+            }
+            .hero-message {
+                text-align: center;
+    }
+}
+
         .main-container {
             max-width: 1120px;
             margin: -30px auto 30px auto;
@@ -297,21 +350,27 @@
     </style>
 </head>
 <body>
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <div class="hero-logo">
-                <img src="logo.png" alt="Juna's Cake Home Logo" width="80">
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+        <div class="hero-left">
+            <div class="hero-logo-circle">
+                <img src="logo.png" alt="Juna's Cake Home Logo">
             </div>
+            <div class="hero-brand-name">Juna's Cake Home</div>
+        </div>
+        <div class="hero-right">
             <h1>Why Choose Juna's Cake Home?</h1>
             <p class="hero-tag">Handcrafted custom cakes in Sarjapur Road, Bangalore</p>
             <div class="hero-message">
                 <p>Every cake is made with <strong>extreme care and attention to hygiene</strong>. Each order is personally handled so that every detail is neat, clean and beautiful.</p>
-                <p>All cakes are <strong>freshly baked after we receive your order</strong>, using high-quality ingredients only. We understand that <strong>safety and hygiene</strong> are the most important parts of a bakery business.</p>
+                <p>All cakes are <strong>freshly baked after we receive your order</strong>, using only high-quality ingredients. We understand that <strong>safety and hygiene</strong> are the most important parts of a bakery business.</p>
                 <p>You get the <strong>best value for every rupee you spend</strong>. Premium cakes may cost a bit more, but the taste, finish and experience make it truly worth it.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     <div class="main-container">
         <div class="flavours-box">
             <div class="flavours-title">Flavours Available</div>
