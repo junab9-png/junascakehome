@@ -320,9 +320,19 @@
             z-index: 9999;
             padding: 20px;
         }
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+}
         .lightbox img {
-            max-width: 95vw;
-            max-height: 90vh;
+            max-width: 80vw;
+            max-height: 80vh;
             border-radius: 12px;
             box-shadow: 0 0 30px rgba(0,0,0,0.6);
         }
@@ -335,6 +345,20 @@
             cursor: pointer;
             font-weight: 600;
         }
+        .lightbox-prev,
+        .lightbox-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2.2em;
+            color: #fff;
+            cursor: pointer;
+            padding: 0 10px;
+            user-select: none;
+        }
+        .lightbox-prev { left: 30px; }
+        .lightbox-next { right: 30px; }
+
         @media (max-width: 600px) {
             .hero {
                 min-height: 220px;
@@ -650,21 +674,92 @@
         <p>Bangalore - 562125</p>
         <p>WhatsApp: +91 95350 71630</p>
     </div>
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox" id="lightbox">
         <span class="lightbox-close" onclick="closeLightbox()">×</span>
+        <span class="lightbox-prev" onclick="prevImage(event)">&#10094;</span>
         <img id="lightbox-img" src="" alt="Cake">
+        <span class="lightbox-next" onclick="nextImage(event)">&#10095;</span>
     </div>
-    <script>
-        function openLightbox(src) {
-            var lb = document.getElementById('lightbox');
-            var img = document.getElementById('lightbox-img');
-            img.src = src;
-            lb.style.display = 'flex';
-        }
-        function closeLightbox() {
-            var lb = document.getElementById('lightbox');
-            lb.style.display = 'none';
-        }
-    </script>
+
+        <script>
+            // All gallery images in the order of navigation
+            const galleryImages = [
+                // Birthday (0–6)
+                'birthday-cakes-1.jpg',
+                'birthday-cakes-2.jpg',
+                'birthday-cakes-3.jpg',
+                'birthday-cakes-4.jpg',
+                'birthday-cakes-5.jpg',
+                'birthday-cakes-6.jpg',
+                'birthday-cakes-7.jpg',
+                // Anniversary (7–13)
+                'anniversary-cakes-1.jpg',
+                'anniversary-cakes-2.jpg',
+                'anniversary-cakes-3.jpg',
+                'anniversary-cakes-4.jpg',
+                'anniversary-cakes-5.jpg',
+                'anniversary-cakes-6.jpg',
+                'anniversary-cakes-7.jpg',
+                // Theme – Elsa (14–17)
+                'theme-elsa-1.jpg','theme-elsa-2.jpg','theme-elsa-3.jpg','theme-elsa-4.jpg',
+                // Theme – Peppa (18–21)
+                'theme-peppa-1.jpg','theme-peppa-2.jpg','theme-peppa-3.jpg','theme-peppa-4.jpg',
+                // Theme – Paw (22–25)
+                'theme-paw-1.jpg','theme-paw-2.jpg','theme-paw-3.jpg','theme-paw-4.jpg',
+                // Theme – Unicorn (26–29)
+                'theme-unicorn-1.jpg','theme-unicorn-2.jpg','theme-unicorn-3.jpg','theme-unicorn-4.jpg',
+                // Theme – Jungle (30–33)
+                'theme-jungle-1.jpg','theme-jungle-2.jpg','theme-jungle-3.jpg','theme-jungle-4.jpg',
+                // Theme – Spiderman (34–37)
+                'theme-spiderman-1.jpg','theme-spiderman-2.jpg','theme-spiderman-3.jpg','theme-spiderman-4.jpg',
+                // Theme – Football (38–41)
+                'theme-football-1.jpg','theme-football-2.jpg','theme-football-3.jpg','theme-football-4.jpg',
+                // Theme – Mermaid (42–45)
+                'theme-mermaid-1.jpg','theme-mermaid-2.jpg','theme-mermaid-3.jpg','theme-mermaid-4.jpg',
+                // Theme – Baby Shower (46–49)
+                'theme-babyshower-1.jpg','theme-babyshower-2.jpg','theme-babyshower-3.jpg','theme-babyshower-4.jpg'
+            ];
+        
+            let currentIndex = 0;
+        
+            function openLightbox(index) {
+                currentIndex = index;
+                const lb = document.getElementById('lightbox');
+                const img = document.getElementById('lightbox-img');
+                img.src = galleryImages[currentIndex];
+                lb.style.display = 'flex';
+            }
+        
+            function closeLightbox() {
+                document.getElementById('lightbox').style.display = 'none';
+            }
+        
+            function nextImage(event) {
+                event.stopPropagation();
+                currentIndex = (currentIndex + 1) % galleryImages.length;
+                document.getElementById('lightbox-img').src = galleryImages[currentIndex];
+            }
+        
+            function prevImage(event) {
+                event.stopPropagation();
+                currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+                document.getElementById('lightbox-img').src = galleryImages[currentIndex];
+            }
+        
+            // Close when clicking dark background
+            document.getElementById('lightbox').addEventListener('click', function (e) {
+                if (e.target.id === 'lightbox') {
+                    closeLightbox();
+                }
+            });
+        
+            // Keyboard support
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') nextImage(e);
+                if (e.key === 'ArrowLeft') prevImage(e);
+            });
+        </script>
+
 </body>
 </html>
