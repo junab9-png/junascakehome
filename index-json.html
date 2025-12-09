@@ -505,78 +505,76 @@
       let indexCounter = 0;
 
       // Helper to build one card
-        function buildCard(sectionEl, title, price, images, bullets, orderText) {
-          const startIndex = indexCounter;
-          const endIndex = startIndex + images.length - 1;
-        
-          // Add image paths to global galleryImages
-          images.forEach(src => galleryImages.push(src));
-        
-          const card = document.createElement('div');
-          card.className = 'card';
-        
-          const imgWrap = document.createElement('div');
-          imgWrap.className = 'card-img-wrap';
-        
-          const mainImg = document.createElement('img');
-          mainImg.src = images[0];
-          mainImg.alt = title;
-          mainImg.onclick = function () {
-            openLightbox(startIndex, startIndex, endIndex);
-          };
-          imgWrap.appendChild(mainImg);
-        
-          const body = document.createElement('div');
-          body.className = 'card-body';
-        
-          const h = document.createElement('div');
-          h.className = 'card-title';
-          h.textContent = title;
-          body.appendChild(h);
-        
-          const priceDiv = document.createElement('div');
-          priceDiv.className = 'card-price';
-          priceDiv.textContent = price;
-          body.appendChild(priceDiv);
-        
-          const thumbRow = document.createElement('div');
-          thumbRow.className = 'thumb-row';
-          images.forEach((src, i) => {
-            const t = document.createElement('img');
-            t.src = src;
-            t.alt = title + ' ' + (i + 1);
-            t.onclick = function () {
-              openLightbox(startIndex + i, startIndex, endIndex);
-            };
-            thumbRow.appendChild(t);
-          });
-          body.appendChild(thumbRow);
-        
-          // Bullet list from JSON
-          const ul = document.createElement('ul');
-          ul.className = 'card-list';
-          if (Array.isArray(bullets) && bullets.length > 0) {
-            bullets.forEach(text => {
-              const li = document.createElement('li');
-              li.textContent = '• ' + text;
-              ul.appendChild(li);
-            });
-          }
-          body.appendChild(ul);
-        
-          const a = document.createElement('a');
-          a.className = 'order-btn';
-          a.href = 'https://wa.me/919535071630?text=' + encodeURIComponent(orderText);
-          a.textContent = 'Order';
-          body.appendChild(a);
-        
-          card.appendChild(imgWrap);
-          card.appendChild(body);
-          sectionEl.appendChild(card);
-        
-          indexCounter = endIndex + 1;
-        }
+      function buildCard(sectionEl, title, price, images, bullets, orderText) {
+        const startIndex = indexCounter;
+        const endIndex = startIndex + images.length - 1;
 
+        // Add image paths to global galleryImages
+        images.forEach(src => galleryImages.push(src));
+
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        const imgWrap = document.createElement('div');
+        imgWrap.className = 'card-img-wrap';
+
+        const mainImg = document.createElement('img');
+        mainImg.src = images[0];
+        mainImg.alt = title;
+        mainImg.onclick = function () {
+          openLightbox(startIndex, startIndex, endIndex);
+        };
+        imgWrap.appendChild(mainImg);
+
+        const body = document.createElement('div');
+        body.className = 'card-body';
+
+        const h = document.createElement('div');
+        h.className = 'card-title';
+        h.textContent = title;
+        body.appendChild(h);
+
+        const priceDiv = document.createElement('div');
+        priceDiv.className = 'card-price';
+        priceDiv.textContent = price;
+        body.appendChild(priceDiv);
+
+        const thumbRow = document.createElement('div');
+        thumbRow.className = 'thumb-row';
+        images.forEach((src, i) => {
+          const t = document.createElement('img');
+          t.src = src;
+          t.alt = title + ' ' + (i + 1);
+          t.onclick = function () {
+            openLightbox(startIndex + i, startIndex, endIndex);
+          };
+          thumbRow.appendChild(t);
+        });
+        body.appendChild(thumbRow);
+
+        // Bullet list from JSON
+        const ul = document.createElement('ul');
+        ul.className = 'card-list';
+        if (Array.isArray(bullets) && bullets.length > 0) {
+          bullets.forEach(text => {
+            const li = document.createElement('li');
+            li.textContent = '• ' + text;
+            ul.appendChild(li);
+          });
+        }
+        body.appendChild(ul);
+
+        const a = document.createElement('a');
+        a.className = 'order-btn';
+        a.href = 'https://wa.me/919535071630?text=' + encodeURIComponent(orderText);
+        a.textContent = 'Order';
+        body.appendChild(a);
+
+        card.appendChild(imgWrap);
+        card.appendChild(body);
+        sectionEl.appendChild(card);
+
+        indexCounter = endIndex + 1;
       }
 
       // Birthday
@@ -611,7 +609,6 @@
           ],
           'Hi! I want to order an Anniversary Cake. Please share designs and price range.'
         );
-
       }
 
       // Themes – one card per theme
@@ -624,6 +621,7 @@
             theme.title,
             theme.price,
             theme.images,
+            theme.bullets || [],
             'Hi! I want to see ' + theme.title + ' designs and price range.'
           );
         });
@@ -633,8 +631,6 @@
       console.error('Error loading gallery.json', err);
     });
 </script>
-
-
 
 </body>
 </html>
