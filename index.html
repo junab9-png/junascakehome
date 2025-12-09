@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -95,22 +96,39 @@
             max-width: 720px;
         }
         
-        .hero-right h1 {
-            font-size: 2.1em;
-            margin: 0 0 8px 0;
-            letter-spacing: 0.04em;
+        .hero-right h1,
+        .hero-right h2 {
+            margin: 0;
+        }
+        
+        .hero-main-title {
+            font-family: "Playfair Display", serif;
+            font-size: 2.6rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
             color: #ffffff;
         }
         
-        .hero-tag {
+        .hero-sub-title {
+            font-family: "Poppins", Arial, sans-serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            color: #f7e9ff;
+            margin-bottom: 10px;
+        }
+                
+            .hero-tag {
             display: inline-block;
             margin-bottom: 14px;
             padding: 6px 14px;
             border-radius: 999px;
-            background: rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.16);
             font-size: 0.9em;
             color: #f9f9f9;
         }
+
         
         .hero-message {
             font-size: 0.95em;
@@ -145,6 +163,14 @@
             }
             .hero-message {
                 text-align: center;
+            .hero-main-title {
+            font-size: 2.1rem;
+            text-align: center;
+            }
+            .hero-sub-title {
+                font-size: 1.2rem;
+                text-align: center;
+        }
     }
 }
 
@@ -375,8 +401,9 @@
             </div>
             <div class="hero-brand-name">Juna's Cake Home</div>
         </div>
-        <div class="hero-right">
-            <h1>Why Choose Juna's Cake Home?</h1>
+            <div class="hero-right">
+            <h1 class="hero-main-title">Juna's Cake Home</h1>
+            <h2 class="hero-sub-title">Why Choose Juna's Cake Home?</h2>
             <p class="hero-tag">Handcrafted custom cakes in Sarjapur Road, Bangalore</p>
             <div class="hero-message">
                 <p>Every cake is made with <strong>extreme care and attention to hygiene</strong>. Each order is personally handled so that every detail is neat, clean and beautiful.</p>
