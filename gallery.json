@@ -1,4 +1,37 @@
-  "themes": {
+{
+  "birthday": {
+    "title": "Birthday Cakes",
+    "price": "₹1200 – ₹1600 / kg",
+    "images": [
+      "birthday-cakes-1.jpg",
+      "birthday-cakes-2.jpg",
+      "birthday-cakes-3.jpg",
+      "birthday-cakes-4.jpg",
+      "birthday-cakes-5.jpg",
+      "birthday-cakes-6.jpg",
+      "birthday-cakes-7.jpg",
+      "birthday-cakes-8.jpg",
+      "birthday-cakes-9.jpg",
+      "birthday-cakes-10.jpg"
+    ]
+  },
+  "anniversary": {
+    "title": "Anniversary Cakes",
+    "price": "₹1300 – ₹1800 / kg",
+    "images": [
+      "anniversary-cakes-1.jpg",
+      "anniversary-cakes-2.jpg",
+      "anniversary-cakes-3.jpg",
+      "anniversary-cakes-4.jpg",
+      "anniversary-cakes-5.jpg",
+      "anniversary-cakes-6.jpg",
+      "anniversary-cakes-7.jpg",
+      "anniversary-cakes-8.jpg",
+      "anniversary-cakes-9.jpg",
+      "anniversary-cakes-10.jpg"
+    ]
+  },
+"themes": {
     "elsa": {
       "title": "Elsa Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
