@@ -35,6 +35,10 @@
     "elsa": {
       "title": "Elsa Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Multiple Elsa designs",
+      "Custom colours and toppers"
+      ],
       "images": [
         "theme-elsa-1.jpg",
         "theme-elsa-2.jpg",
