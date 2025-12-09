@@ -53,6 +53,10 @@
     "peppa": {
       "title": "Peppa Pig Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Cute Peppa Pig designs",
+      "Custom name & age toppers"
+      ],
       "images": [
         "theme-peppa-1.jpg",
         "theme-peppa-2.jpg",
@@ -67,6 +71,10 @@
     "paw": {
       "title": "Paw Patrol Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Multiple pup character options",
+      "Customised for kids’ age"
+      ],
       "images": [
         "theme-paw-1.jpg",
         "theme-paw-2.jpg",
@@ -81,6 +89,10 @@
     "unicorn": {
       "title": "Unicorn Theme Cake",
       "price": "₹1400 – ₹2000 / kg",
+      "bullets": [
+      "Multiple unicorn designs",
+      "Pastel / rainbow options"
+      ],
       "images": [
         "theme-unicorn-1.jpg",
         "theme-unicorn-2.jpg",
@@ -95,6 +107,10 @@
     "jungle": {
       "title": "Jungle Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-jungle-1.jpg",
         "theme-jungle-2.jpg",
@@ -109,6 +125,10 @@
     "spiderman": {
       "title": "Spiderman Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Superhero themed designs",
+      "City / web background styles"
+      ],
       "images": [
         "theme-spiderman-1.jpg",
         "theme-spiderman-2.jpg",
@@ -123,6 +143,10 @@
     "football": {
       "title": "Football Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Football & jersey designs",
+      "Custom team colours"
+      ],
       "images": [
         "theme-football-1.jpg",
         "theme-football-2.jpg",
@@ -137,6 +161,10 @@
     "mermaid": {
       "title": "Mermaid Theme Cake",
       "price": "₹1400 – ₹2000 / kg",
+      "bullets": [
+      "Underwater & shell designs",
+      "Pastel & ocean colours"
+      ],
       "images": [
         "theme-mermaid-1.jpg",
         "theme-mermaid-2.jpg",
@@ -151,6 +179,10 @@
     "babyshower": {
       "title": "Baby Shower Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Oh Baby, gender reveal & more",
+      "Custom colours and toppers"
+      ],
       "images": [
         "theme-babyshower-1.jpg",
         "theme-babyshower-2.jpg",
@@ -165,6 +197,10 @@
     "space": {
       "title": "Space Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Space theme, Plaents, astronauts & more",
+      "Perfect for kid's birthdays"
+      ],
       "images": [
         "theme-space-1.jpg",
         "theme-space-2.jpg",
@@ -179,6 +215,10 @@
     "bossbaby": {
       "title": "Boss Baby Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-bossbaby-1.jpg",
         "theme-bossbaby-2.jpg",
@@ -193,6 +233,10 @@
     "barbie": {
       "title": "Barbie Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-barbie-1.jpg",
         "theme-barbie-2.jpg",
@@ -207,6 +251,10 @@
     "teddy": {
       "title": "Teddy Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-teddy-1.jpg",
         "theme-teddy-2.jpg",
@@ -221,6 +269,10 @@
     "hellokitty": {
       "title": "Hello Kitty Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-hellokitty-1.jpg",
         "theme-hellokitty-2.jpg",
@@ -235,6 +287,10 @@
     "masha": {
       "title": "Masha Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-masha-1.jpg",
         "theme-masha-2.jpg",
@@ -249,6 +305,10 @@
     "cocomelon": {
       "title": "Coco Melon Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-cocomelon-1.jpg",
         "theme-cocomelon-2.jpg",
@@ -263,6 +323,10 @@
     "butterfly": {
       "title": "Butterfly Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-butterfly-1.jpg",
         "theme-butterfly-2.jpg",
@@ -277,6 +341,10 @@
     "book": {
       "title": "Book Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-book-1.jpg",
         "theme-book-2.jpg",
@@ -291,6 +359,10 @@
     "bluey": {
       "title": "Bluey Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-bluey-1.jpg",
         "theme-bluey-2.jpg",
@@ -305,6 +377,10 @@
     "halloween": {
       "title": "Halloween Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-halloween-1.jpg",
         "theme-halloween-2.jpg",
@@ -319,6 +395,10 @@
     "harrypotter": {
       "title": "Harry Potter Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-harrypotter-1.jpg",
         "theme-harrypotter-2.jpg",
@@ -333,6 +413,10 @@
     "dinosaur": {
       "title": "Dinosaur Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-dinosaur-1.jpg",
         "theme-dinosaur-2.jpg",
@@ -347,6 +431,10 @@
     "tomandjerry": {
       "title": "Tom and Jerry Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-tomandjerry-1.jpg",
         "theme-tomandjerry-2.jpg",
@@ -361,6 +449,10 @@
     "train": {
       "title": "Train Theme Cake",
       "price": "₹1300 – ₹1900 / kg",
+      "bullets": [
+      "Animal & jungle scene designs",
+      "Perfect for kids’ birthdays"
+      ],
       "images": [
         "theme-train-1.jpg",
         "theme-train-2.jpg",
