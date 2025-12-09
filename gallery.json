@@ -1,0 +1,371 @@
+{
+  "birthday": {
+    "title": "Birthday Cakes",
+    "price": "₹1200 – ₹1600 / kg",
+    "images": [
+      "birthday-cakes-1.jpg",
+      "birthday-cakes-2.jpg",
+      "birthday-cakes-3.jpg",
+      "birthday-cakes-4.jpg",
+      "birthday-cakes-5.jpg",
+      "birthday-cakes-6.jpg",
+      "birthday-cakes-7.jpg",
+      "birthday-cakes-8.jpg",
+      "birthday-cakes-9.jpg",
+      "birthday-cakes-10.jpg"
+    ]
+  },
+  "anniversary": {
+    "title": "Anniversary Cakes",
+    "price": "₹1300 – ₹1800 / kg",
+    "images": [
+      "anniversary-cakes-1.jpg",
+      "anniversary-cakes-2.jpg",
+      "anniversary-cakes-3.jpg",
+      "anniversary-cakes-4.jpg",
+      "anniversary-cakes-5.jpg",
+      "anniversary-cakes-6.jpg",
+      "anniversary-cakes-7.jpg",
+      "anniversary-cakes-8.jpg",
+      "anniversary-cakes-9.jpg",
+      "anniversary-cakes-10.jpg"
+    ]
+  },
+  "themes": {
+  "elsa": {
+    "title": "Elsa Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-elsa-1.jpg",
+      "theme-elsa-2.jpg",
+      "theme-elsa-3.jpg",
+      "theme-elsa-4.jpg",
+      "theme-elsa-5.jpg",
+      "theme-elsa-6.jpg",
+      "theme-elsa-7.jpg",
+      "theme-elsa-8.jpg"
+    ]
+  },
+  "peppa": {
+    "title": "Peppa Pig Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-peppa-1.jpg",
+      "theme-peppa-2.jpg",
+      "theme-peppa-3.jpg",
+      "theme-peppa-4.jpg",
+      "theme-peppa-5.jpg",
+      "theme-peppa-6.jpg",
+      "theme-peppa-7.jpg",
+      "theme-peppa-8.jpg"
+    ]
+  },
+  "paw": {
+    "title": "Paw Patrol Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-paw-1.jpg",
+      "theme-paw-2.jpg",
+      "theme-paw-3.jpg",
+      "theme-paw-4.jpg",
+      "theme-paw-5.jpg",
+      "theme-paw-6.jpg",
+      "theme-paw-7.jpg",
+      "theme-paw-8.jpg"
+    ]
+  },
+  "unicorn": {
+    "title": "Unicorn Theme Cake",
+    "price": "₹1400 – ₹2000 / kg",
+    "images": [
+      "theme-unicorn-1.jpg",
+      "theme-unicorn-2.jpg",
+      "theme-unicorn-3.jpg",
+      "theme-unicorn-4.jpg",
+      "theme-unicorn-5.jpg",
+      "theme-unicorn-6.jpg",
+      "theme-unicorn-7.jpg",
+      "theme-unicorn-8.jpg"
+    ]
+  },
+  "jungle": {
+    "title": "Jungle Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-jungle-1.jpg",
+      "theme-jungle-2.jpg",
+      "theme-jungle-3.jpg",
+      "theme-jungle-4.jpg",
+      "theme-jungle-5.jpg",
+      "theme-jungle-6.jpg",
+      "theme-jungle-7.jpg",
+      "theme-jungle-8.jpg"
+    ]
+  },
+  "spiderman": {
+    "title": "Spiderman Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-spiderman-1.jpg",
+      "theme-spiderman-2.jpg",
+      "theme-spiderman-3.jpg",
+      "theme-spiderman-4.jpg",
+      "theme-spiderman-5.jpg",
+      "theme-spiderman-6.jpg",
+      "theme-spiderman-7.jpg",
+      "theme-spiderman-8.jpg"
+    ]
+  },
+  "football": {
+    "title": "Football Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-football-1.jpg",
+      "theme-football-2.jpg",
+      "theme-football-3.jpg",
+      "theme-football-4.jpg",
+      "theme-football-5.jpg",
+      "theme-football-6.jpg",
+      "theme-football-7.jpg",
+      "theme-football-8.jpg"
+    ]
+  },
+  "mermaid": {
+    "title": "Mermaid Theme Cake",
+    "price": "₹1400 – ₹2000 / kg",
+    "images": [
+      "theme-mermaid-1.jpg",
+      "theme-mermaid-2.jpg",
+      "theme-mermaid-3.jpg",
+      "theme-mermaid-4.jpg",
+      "theme-mermaid-5.jpg",
+      "theme-mermaid-6.jpg",
+      "theme-mermaid-7.jpg",
+      "theme-mermaid-8.jpg"
+    ]
+  },
+  "babyshower": {
+    "title": "Baby Shower Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-babyshower-1.jpg",
+      "theme-babyshower-2.jpg",
+      "theme-babyshower-3.jpg",
+      "theme-babyshower-4.jpg",
+      "theme-babyshower-5.jpg",
+      "theme-babyshower-6.jpg",
+      "theme-babyshower-7.jpg",
+      "theme-babyshower-8.jpg"
+    ]
+  },
+  "space": {
+    "title": "Space Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-space-1.jpg",
+      "theme-space-2.jpg",
+      "theme-space-3.jpg",
+      "theme-space-4.jpg",
+      "theme-space-5.jpg",
+      "theme-space-6.jpg",
+      "theme-space-7.jpg",
+      "theme-space-8.jpg"
+    ]
+  },
+  "bossbaby": {
+    "title": "Boss Baby Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-bossbaby-1.jpg",
+      "theme-bossbaby-2.jpg",
+      "theme-bossbaby-3.jpg",
+      "theme-bossbaby-4.jpg",
+      "theme-bossbaby-5.jpg",
+      "theme-bossbaby-6.jpg",
+      "theme-bossbaby-7.jpg",
+      "theme-bossbaby-8.jpg"
+    ]
+  },
+  "barbie": {
+    "title": "Barbie Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-barbie-1.jpg",
+      "theme-barbie-2.jpg",
+      "theme-barbie-3.jpg",
+      "theme-barbie-4.jpg",
+      "theme-barbie-5.jpg",
+      "theme-barbie-6.jpg",
+      "theme-barbie-7.jpg",
+      "theme-barbie-8.jpg"
+    ]
+  },
+  "teddy": {
+    "title": "Teddy Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-teddy-1.jpg",
+      "theme-teddy-2.jpg",
+      "theme-teddy-3.jpg",
+      "theme-teddy-4.jpg",
+      "theme-teddy-5.jpg",
+      "theme-teddy-6.jpg",
+      "theme-teddy-7.jpg",
+      "theme-teddy-8.jpg"
+    ]
+  },
+  "hellokitty": {
+    "title": "Hello Kitty Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-hellokitty-1.jpg",
+      "theme-hellokitty-2.jpg",
+      "theme-hellokitty-3.jpg",
+      "theme-hellokitty-4.jpg",
+      "theme-hellokitty-5.jpg",
+      "theme-hellokitty-6.jpg",
+      "theme-hellokitty-7.jpg",
+      "theme-hellokitty-8.jpg"
+    ]
+  },
+  "masha": {
+    "title": "Masha Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-masha-1.jpg",
+      "theme-masha-2.jpg",
+      "theme-masha-3.jpg",
+      "theme-masha-4.jpg",
+      "theme-masha-5.jpg",
+      "theme-masha-6.jpg",
+      "theme-masha-7.jpg",
+      "theme-masha-8.jpg"
+    ]
+  },
+  "cocomelon": {
+    "title": "Coco Melon Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-cocomelon-1.jpg",
+      "theme-cocomelon-2.jpg",
+      "theme-cocomelon-3.jpg",
+      "theme-cocomelon-4.jpg",
+      "theme-cocomelon-5.jpg",
+      "theme-cocomelon-6.jpg",
+      "theme-cocomelon-7.jpg",
+      "theme-cocomelon-8.jpg"
+    ]
+  },
+  "butterfly": {
+    "title": "Butterfly Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-butterfly-1.jpg",
+      "theme-butterfly-2.jpg",
+      "theme-butterfly-3.jpg",
+      "theme-butterfly-4.jpg",
+      "theme-butterfly-5.jpg",
+      "theme-butterfly-6.jpg",
+      "theme-butterfly-7.jpg",
+      "theme-butterfly-8.jpg"
+    ]
+  },
+  "book": {
+    "title": "Book Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-book-1.jpg",
+      "theme-book-2.jpg",
+      "theme-book-3.jpg",
+      "theme-book-4.jpg",
+      "theme-book-5.jpg",
+      "theme-book-6.jpg",
+      "theme-book-7.jpg",
+      "theme-book-8.jpg"
+    ]
+  },
+  "bluey": {
+    "title": "Bluey Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-bluey-1.jpg",
+      "theme-bluey-2.jpg",
+      "theme-bluey-3.jpg",
+      "theme-bluey-4.jpg",
+      "theme-bluey-5.jpg",
+      "theme-bluey-6.jpg",
+      "theme-bluey-7.jpg",
+      "theme-bluey-8.jpg"
+    ]
+  },
+  "halloween": {
+    "title": "Halloween Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-halloween-1.jpg",
+      "theme-halloween-2.jpg",
+      "theme-halloween-3.jpg",
+      "theme-halloween-4.jpg",
+      "theme-halloween-5.jpg",
+      "theme-halloween-6.jpg",
+      "theme-halloween-7.jpg",
+      "theme-halloween-8.jpg"
+    ]
+  },
+  "harrypotter": {
+    "title": "Harry Potter Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-harrypotter-1.jpg",
+      "theme-harrypotter-2.jpg",
+      "theme-harrypotter-3.jpg",
+      "theme-harrypotter-4.jpg",
+      "theme-harrypotter-5.jpg",
+      "theme-harrypotter-6.jpg",
+      "theme-harrypotter-7.jpg",
+      "theme-harrypotter-8.jpg"
+    ]
+  },
+  "dinosaur": {
+    "title": "Dinosaur Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-dinosaur-1.jpg",
+      "theme-dinosaur-2.jpg",
+      "theme-dinosaur-3.jpg",
+      "theme-dinosaur-4.jpg",
+      "theme-dinosaur-5.jpg",
+      "theme-dinosaur-6.jpg",
+      "theme-dinosaur-7.jpg",
+      "theme-dinosaur-8.jpg"
+    ]
+  },
+  "tomandjerry": {
+    "title": "Tom and Jerry Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-tomandjerry-1.jpg",
+      "theme-tomandjerry-2.jpg",
+      "theme-tomandjerry-3.jpg",
+      "theme-tomandjerry-4.jpg",
+      "theme-tomandjerry-5.jpg",
+      "theme-tomandjerry-6.jpg",
+      "theme-tomandjerry-7.jpg",
+      "theme-tomandjerry-8.jpg"
+    ]
+  },
+  "train": {
+    "title": "Train Theme Cake",
+    "price": "₹1300 – ₹1900 / kg",
+    "images": [
+      "theme-train-1.jpg",
+      "theme-train-2.jpg",
+      "theme-train-3.jpg",
+      "theme-train-4.jpg",
+      "theme-train-5.jpg",
+      "theme-train-6.jpg",
+      "theme-train-7.jpg",
+      "theme-train-8.jpg"
+    ]
+  }
+}
