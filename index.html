@@ -523,6 +523,32 @@
     if (e.key === 'ArrowRight') nextImage(e);
     if (e.key === 'ArrowLeft') prevImage(e);
   });
+    
+ // Touch swipe support for mobile
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  const lightboxElement = document.getElementById('lightbox');
+
+  lightboxElement.addEventListener('touchstart', function (e) {
+    if (e.touches && e.touches.length > 0) {
+      touchStartX = e.touches[0].clientX;
+    }
+  }, { passive: true });
+
+  lightboxElement.addEventListener('touchend', function (e) {
+    touchEndX = e.changedTouches[0].clientX;
+    const diffX = touchEndX - touchStartX;
+    const threshold = 40; // minimum swipe distance in px
+
+    if (diffX > threshold) {
+      // swipe right → previous image
+      prevImage(e);
+    } else if (diffX < -threshold) {
+      // swipe left → next image
+      nextImage(e);
+    }
+  }, { passive: true });
 
   // Build galleries from gallery.json
   fetch('https://raw.githubusercontent.com/junab9-png/junascakehome/main/gallery.json')
