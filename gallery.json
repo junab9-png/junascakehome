@@ -498,6 +498,25 @@
         "theme-half-7.jpg",
         "theme-half-8.jpg"
       ]
+      },
+      },
+        "bike": {
+        "title": "Bike Theme Cake",
+        "price": "₹1600 – ₹2000 / kg",
+        "bullets": [
+        "Fuel your celebration with a cake as fast and stylish as your favorite ride!",
+        "3D toppers as well!"
+        ],
+        "images": [
+          "theme-bike-1.jpg",
+          "theme-bike-2.jpg",
+          "theme-bike-3.jpg",
+          "theme-bike-4.jpg",
+          "theme-bike-5.jpg",
+          "theme-bike-6.jpg",
+          "theme-bike-7.jpg",
+          "theme-bike-8.jpg"
+        ]
     }
   }
 }
