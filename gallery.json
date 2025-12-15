@@ -463,6 +463,41 @@
         "theme-train-7.jpg",
         "theme-train-8.jpg"
       ]
+    },
+    "holycommunion": {
+      "title": "Holy Communion Theme Cake",
+      "price": "₹1500 – ₹1900 / kg",
+      "bullets": [
+      "Gracefully crafted to celebrate faith, purity, and blessings on this sacred milestone"
+      ],
+      "images": [
+        "theme-holy-1.jpg",
+        "theme-holy-2.jpg",
+        "theme-holy-3.jpg",
+        "theme-holy-4.jpg",
+        "theme-holy-5.jpg",
+        "theme-holy-6.jpg",
+        "theme-holy-7.jpg",
+        "theme-holy-8.jpg",
+      ]
+    },
+      "halfbirthday": {
+      "title": "Half birthday Theme Cake",
+      "price": "₹1500 – ₹1900 / kg",
+      "bullets": [
+      "Halfway to one, and twice the sweetness",
+      "Celebrating six months of pure joy!"
+      ],
+      "images": [
+        "theme-half-1.jpg",
+        "theme-half-2.jpg",
+        "theme-half-3.jpg",
+        "theme-half-4.jpg",
+        "theme-half-5.jpg",
+        "theme-half-6.jpg",
+        "theme-half-7.jpg",
+        "theme-half-8.jpg",
+      ]
     }
   }
 }
